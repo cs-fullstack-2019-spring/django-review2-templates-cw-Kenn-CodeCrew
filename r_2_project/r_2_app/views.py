@@ -86,5 +86,8 @@ def list_songs(request):
     return render(request, 'r_2_app/songs.html', context)
 
 
-def list_song(request, song_id):
+def song_details(request, song_id):
     return render(request, 'r_2_app/song_details.html', {'current_song': songs[song_id]})
+
+def song_superdetails(request, song_id):
+    return render(request, 'r_2_app/song_superdetail.html', {'current_song': songs[song_id]})

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<a href="{% url 'list_songs' %}">Home</a>
+
+<p>{{ current_song.song_title }}</p>
+<p>{{ current_song.song_band }}</p>
+<p>{{ current_song.song_album }}</p>
+<p>{{ current_song.song_lyrics }}</p>
+<p>{{ current_song.song_audio }}</p>
+
+</body>
+</html>
